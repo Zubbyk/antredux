@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ANT REDUX's</title>
+<link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    font-family: 'beer money', Arial, sans-serif; /* Используем ваш шрифт */
+    text-align: center; /* Центрируем содержимое по центру */
+  }
+  /* Стили для навигации */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -200px; /* начинается за пределами экрана */
+    background-color: black; /* черный цвет фона */
+    color: white; /* белый цвет текста */
+    padding-top: 60px; /* увеличим отступ сверху для текста навигации */
+    transition: left 0.3s; /* анимация при изменении положения */
+  }
+  .sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: inherit; /* наследует цвет текста от родительского элемента */
+    margin-top: 10px; /* добавим отступ сверху для ссылок */
+  }
+  .sidenav a:hover {
+    background-color: #333; /* темно-серый цвет при наведении */
+  }
+  /* Стили для основного контента */
+  .main {
+    padding: 20px;
+    transition: margin-left 0.3s; /* анимация при изменении отступа */
+  }
+  /* Стили для кнопки */
+  .menu-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background: url('1.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transition: left 0.3s; /* анимация при изменении положения */
+  }
+</style>
+</head>
+<body bgcolor = 'black'>
+
+<!-- Кнопка для скрытия/показа навигации -->
+<div class="menu-btn" onclick="toggleNav()"></div>
+
+<!-- Навигация слева -->
+<div class="sidenav" id="mySidenav"><font size='5'>
+  <h2 style="color: white;">ANT REDUX's</h2> <!-- Добавлен текст "ANT REDUX's" -->
+  <a href="../../index.html">Главная</a>
+  <a href="redux.html">Редуксы</a>
+  <a href="ganpack.html">Ганпаки</a>
+  <a href="penis_vani.html">Пенис Вани</a>
+  <a href="other.html">хз</a>
+</div>
+
+<!-- Основной контент -->
+<div class="main" id="mainContent"><font color='white'>
+  <h1 id="pageTitle">Редуксы</h1>
+  <font size='15'>
+1. Ребукс ⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀2. Ребукс<br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/sJCnC9kaFeY?si=GgCmaNwqYmSwVsZ1" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HKusItlM14s?si=D88tVh6MWK7jTydw" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <br><a href=' https://drive.google.com/drive/folders/1gMkn-rh_70mGhnZZVJPHTgMSWmrk6ENv?usp=sharing'><img src="1.png" width='100' height='100'></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<a href=' https://drive.google.com/drive/folders/1gMkn-rh_70mGhnZZVJPHTgMSWmrk6ENv?usp=sharing'><img src="1.png" width='100' height='100'></a>
+</div>
+
+<script>
+// Функция для скрытия/показа навигации
+function toggleNav() {
+  var nav = document.getElementById("mySidenav");
+  var mainContent = document.getElementById("mainContent");
+  var menuBtn = document.querySelector(".menu-btn");
+  
+  if (nav.style.left === "-200px" || nav.style.left === "") {
+    nav.style.left = "0px";
+    mainContent.style.marginLeft = "200px";
+    menuBtn.style.left = "220px";
+  } else {
+    nav.style.left = "-200px";
+    mainContent.style.marginLeft = "20px";
+    menuBtn.style.left = "20px";
+  }
+}
+</script>
+</body>
+</html>
