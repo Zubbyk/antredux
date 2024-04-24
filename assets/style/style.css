@@ -8,3 +8,14 @@
     font-size: 30px;
     margin-top: 10px; /* Отступ между видео и подписью */
 }
+
+@font-face {
+    font-family: 'beer money';
+    src: url('../fonts/beermoney.ttf') format('truetype');
+    /* Дополнительные настройки, если необходимо */
+}
+
+/* Пример использования шрифта */
+body {
+    font-family: 'beer money', Arial, sans-serif;
+}
