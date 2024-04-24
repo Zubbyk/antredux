@@ -1,0 +1,10 @@
+.video-container {
+    display: inline-block; /* Размещаем видео в строчку */
+    text-align: center; /* Центрируем содержимое по горизонтали */
+    margin: 0 20px; /* Отступы между видео */
+}
+
+.caption {
+    font-size: 30px;
+    margin-top: 10px; /* Отступ между видео и подписью */
+}
