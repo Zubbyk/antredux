@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'beer money';
-    src: url('../fonts/beermoney.ttf') format('truetype');
+    src: url('assets/fonts/beermoney.ttf') format('truetype');
     /* Дополнительные настройки, если необходимо */
 }
 
