@@ -6,7 +6,7 @@
 <title>ANT REDUX's</title>
 <link rel="icon" type="image/x-icon" href="assets\images\favicon.ico">
 <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-<script src="assets/scripts/script.js"></script>
+<script type="text/javascript" src="assets/scripts/script.js"></script>
 </head>
 <body bgcolor='black'>
 
@@ -96,56 +96,6 @@
 		<h1>321</h1>
 		321
 	</div>
-
-	<script>
-	// Функция для скрытия/показа навигации
-function toggleNav() {
-  var nav = document.getElementById("mySidenav");
-  var mainContent = document.getElementById("mainContent");
-  var menuBtn = document.querySelector(".menu-btn");
-  
-  if (nav.style.left === "-200px") {
-    nav.style.left = "0px";
-    mainContent.style.marginLeft = "200px";
-    menuBtn.style.left = "220px";
-  } else {
-    nav.style.left = "-200px";
-    mainContent.style.marginLeft = "20px";
-    menuBtn.style.left = "20px";
-  }
-}
-
-// Функция для отображения содержимого категории
-function showCategory(category) {
-  var pageTitle = document.getElementById("pageTitle");
-  var mainContent = document.getElementById("mainContent");
-  var nav = document.getElementById("mySidenav");
-  var menuBtn = document.querySelector(".menu-btn");
-
-  // Закрываем навигацию
-  nav.style.left = "-200px";
-  mainContent.style.marginLeft = "20px";
-  menuBtn.style.left = "20px";
-
-  // Скрыть все категории
-  var categories = document.querySelectorAll(".category-content");
-  categories.forEach(function(item) {
-    item.style.display = "none";
-  });
-
-  // Отобразить выбранную категорию
-  var selectedCategoryContent = document.getElementById(category + "Content");
-  selectedCategoryContent.style.display = "block";
-
-  // Устанавливаем заголовок страницы
-  pageTitle.innerText = selectedCategoryContent.querySelector("h1").innerText;
-}
-
-// При загрузке страницы отображаем категорию "Главная"
-window.onload = function() {
-  showCategory('index');
-};
-</script>
 
   <footer class="footer">
     <div class="container"><font color='white'>
