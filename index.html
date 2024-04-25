@@ -6,60 +6,7 @@
 <title>ANT REDUX's</title>
 <link rel="icon" type="image/x-icon" href="assets\images\favicon.ico">
 <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-<style>
-  /* Общие стили */
-  body {
-    margin: 0;
-    font-family: 'beer money', Arial, sans-serif; /* Используем ваш шрифт */
-    text-align: center; /* Центрируем содержимое по центру */
-  }
-  /* Стили для навигации */
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -200px; /* начинается за пределами экрана */
-    background-color: black; /* черный цвет фона */
-    color: white; /* белый цвет текста */
-    padding-top: 60px; /* увеличим отступ сверху для текста навигации */
-    transition: left 0.3s; /* анимация при изменении положения */
-  }
-  .sidenav a {
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    color: inherit; /* наследует цвет текста от родительского элемента */
-    margin-top: 10px; /* добавим отступ сверху для ссылок */
-  }
-  .sidenav a:hover {
-    background-color: #333; /* темно-серый цвет при наведении */
-  }
-  /* Стили для основного контента */
-  .main {
-    padding: 20px;
-    transition: margin-left 0.3s; /* анимация при изменении отступа */
-    color: white; /* белый цвет текста */
-  }
-  /* Стили для кнопки */
-  .menu-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    background: url('assets/images/1.png') no-repeat center center;
-    background-size: contain;
-    cursor: pointer;
-    transition: left 0.3s; /* анимация при изменении положения */
-  }
-  /* Стили для скрытых блоков */
-  .category-content {
-    display: none;
-  }
-</style>
+<script src="assets/scripts/script.js"></script>
 </head>
 <body bgcolor='black'>
 
@@ -73,7 +20,7 @@
     <a href="#" onclick="showCategory('index')">Главная</a> <!-- Добавлена кнопка "Главная" -->
     <a href="#" onclick="showCategory('redux')">Редуксы</a>
     <a href="#" onclick="showCategory('ganpack')">Ганпаки</a>
-    <a href="#" onclick="showCategory('penis_vani')">Пенис Вани</a>
+    <a href="#" onclick="showCategory('penis_vani')">123</a>
     <a href="#" onclick="showCategory('other')">хз</a>
   </font>
 </div>
@@ -87,19 +34,22 @@
     <p>Это главная страница.</p>
 	<img src='https://i.pinimg.com/originals/84/54/32/8454326cf6da76fb50d564cf8d92d2cc.gif'>
   </div>
+
   <div class="category-content" id="reduxContent">
     <h1> </h1>
     <font size="20"> <p>Редуксы.</p> </font>
+
   <div class="video-container">
 	<div class="caption">1.ребукс</div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sJCnC9kaFeY?si=GgCmaNwqYmSwVsZ1" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<br><a href='https://drive.google.com/drive/folders/1gMkn-rh_70mGhnZZVJPHTgMSWmrk6ENv?usp=sharing'><img src='assets\images\1.png' width='100' height='100'></a>
-
+	<div class='opisanie' id='opisanie'><a href="#" onclick="showCategory('opisanie1')"><img src='assets/images/1.png' width='100' height='100'></a></div>
 </div>
-<div class="video-container">
+
+	<div class="video-container">
 	<div class="caption">2.ребукс</div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/HKusItlM14s?si=D88tVh6MWK7jTydw" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<br><a href='https://drive.google.com/drive/folders/1gMkn-rh_70mGhnZZVJPHTgMSWmrk6ENv?usp=sharing'><img src='assets\images\1.png' width='100' height='100'></a>
+	<div class='opisanie' id='opisanie'><a href="#" onclick="showCategory('opisanie2')"><img src='assets/images/1.png' width='100' height='100'></a></div>
+
 </div>
   
   
@@ -109,8 +59,9 @@
     <p>Содержимое страницы Ганпаки.</p>
   </div>
   <div class="category-content" id="penis_vaniContent">
-    <h1>Пенис Вани</h1>
+    <h1> </h1>
     <p>Содержимое страницы Пенис Вани.</p>
+	пока пусто
   </div>
   <div class="category-content" id="otherContent">
     <h1> </h1>
@@ -118,54 +69,38 @@
   </div>
 </div>
 
-<script>
-// Функция для скрытия/показа навигации
-function toggleNav() {
-  var nav = document.getElementById("mySidenav");
-  var mainContent = document.getElementById("mainContent");
-  var menuBtn = document.querySelector(".menu-btn");
-  
-  if (nav.style.left === "-200px") {
-    nav.style.left = "0px";
-    mainContent.style.marginLeft = "200px";
-    menuBtn.style.left = "220px";
-  } else {
-    nav.style.left = "-200px";
-    mainContent.style.marginLeft = "20px";
-    menuBtn.style.left = "20px";
-  }
-}
 
-// Функция для отображения содержимого категории
-function showCategory(category) {
-  var pageTitle = document.getElementById("pageTitle");
-  var mainContent = document.getElementById("mainContent");
-  var nav = document.getElementById("mySidenav");
-  var menuBtn = document.querySelector(".menu-btn");
+<!--описание редуксов -->
 
-  // Закрываем навигацию
-  nav.style.left = "-200px";
-  mainContent.style.marginLeft = "20px";
-  menuBtn.style.left = "20px";
+	<div class='category-content' id = 'opisanie1Content'>
+	<div class='video1'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sJCnC9kaFeY?si=GgCmaNwqYmSwVsZ1" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	<div class='text1'>
+		<h1>• Удалены лишние пропы, мусор с карты и мелкая трава.<br>
+• Удален свет от фонарей, фар и т.д.<br>
+• Вся оптимизация в 1 update файл.<br>
+• ХП и Броня переливаются + отображение в цифрах.<br>
+• Светящиеся эффекты при попадании<br>
+• Разные модельки ганов в своих и чужих руках.<br>
+• Кастомный прицел на хевике.<br>
+• Ган-пак на все основые оружия.<br>
+• Добавлена замененка на глушители,
+магазины, и прочие модули.<br>
+•заменена мини-карта и просто карта<br>
+•на миникарте заменены km и m на pizda и xyi<br></h1>
+	</div>
+	</div>
+	
+	<div class='category-content' id = 'opisanie2Content'>
+		<h1>321</h1>
+		321
+	</div>
+  <footer class="footer">
+    <div class="container"><font color='white'>
+      <a href='https://discord.gg/wKnJ3t9zyY'><img src='assets\images\discord.png' height='80' width='80'></a>
+    </div>
+  </footer>
 
-  // Скрыть все категории
-  var categories = document.querySelectorAll(".category-content");
-  categories.forEach(function(item) {
-    item.style.display = "none";
-  });
-
-  // Отобразить выбранную категорию
-  var selectedCategoryContent = document.getElementById(category + "Content");
-  selectedCategoryContent.style.display = "block";
-
-  // Устанавливаем заголовок страницы
-  pageTitle.innerText = selectedCategoryContent.querySelector("h1").innerText;
-}
-
-// При загрузке страницы отображаем категорию "Главная"
-window.onload = function() {
-  showCategory('index');
-};
-</script>
 </body>
 </html>
