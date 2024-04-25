@@ -37,7 +37,7 @@ body {
   }
   /* Стили для навигации */
   .sidenav {
-    height: 100%;
+	height: 100%;
     width: 200px;
     position: fixed;
     z-index: 1;
@@ -49,7 +49,7 @@ body {
     transition: left 0.3s; /* анимация при изменении положения */
   }
   .sidenav a {
-    padding: 10px 15px;
+	padding: 10px 15px;
     text-decoration: none;
     display: block;
     color: inherit; /* наследует цвет текста от родительского элемента */
@@ -81,3 +81,17 @@ body {
   .category-content {
     display: none;
   }
+  
+  
+  
+.content1 {
+    transition: margin-left 0.3s;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 53%; /* Можете изменить значение для получения нужного отступа от верхнего края */
+    transform: translateY(-50%);
+    text-align: center;
+}
