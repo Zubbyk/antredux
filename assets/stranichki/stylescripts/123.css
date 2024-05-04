@@ -1,8 +1,15 @@
- /* Общие стили */
+@font-face {
+    font-family: 'beer money';
+    src: url('./../fonts/beermoney.woff') format('truetype');
+    /* Дополнительные настройки, если необходимо */
+} 
+
+/* Общие стили */
   body {
     margin: 0;
     font-family: 'beer money', Arial, sans-serif; /* Используем ваш шрифт */
   }
+
   /* Стили для навигации */
   .sidenav {
     height: 100%;
