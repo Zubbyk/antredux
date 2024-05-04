@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'beer money';
-    src: url('./../fonts/beermoney.woff') format('truetype');
+    src: url('./../../fonts/beermoney.woff') format('truetype');
     /* Дополнительные настройки, если необходимо */
 } 
 
