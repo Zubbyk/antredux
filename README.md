@@ -1,2 +1,1 @@
-# 𝐚𝐧𝐭𝐫𝐞𝐝𝐮𝐱
-𝐛𝐲 𝐚𝐧𝐭
+# ANTREDUX.github.io
