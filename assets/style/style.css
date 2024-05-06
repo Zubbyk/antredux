@@ -30,9 +30,9 @@
   width: 200px;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: -70px;
   left: -200px; /* начинается за пределами экрана */
-  background-color: black; /* черный цвет фона */
+  background-color: rgb(23, 23, 23); /* черный цвет фона */
   color: white; /* белый цвет текста */
   padding-top: 60px; /* увеличим отступ сверху для текста навигации */
   transition: left 0.3s; /* анимация при изменении положения */
