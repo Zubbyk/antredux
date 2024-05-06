@@ -24,7 +24,7 @@
   }
 
 
- /* Стили для навигации */
+/* Стили для навигации */
 .sidenav {
   height: 100%;
   width: 200px;
@@ -32,20 +32,28 @@
   z-index: 1;
   top: -70px;
   left: -200px; /* начинается за пределами экрана */
-  background-color: rgb(23, 23, 23); /* черный цвет фона */
   color: white; /* белый цвет текста */
   padding-top: 60px; /* увеличим отступ сверху для текста навигации */
   transition: left 0.3s; /* анимация при изменении положения */
+  background-image:  url("../images/ramka.png");
+  background-position: 4px -45px; /* это переместит фон на 50 пикселей вправо и 100 пикселей вниз */
+  background-size: 1800px 1080px; /* Устанавливает размер фона в 200 пикселей по ширине и 150 пикселей по высоте */
 }
+
+.sidenav a:hover {
+  background-color: rgba(83, 83, 83, 0.7); /* используем rgba() для задания прозрачности */
+}
+
+
+
+
+
 .sidenav a {
   padding: 10px 15px;
   text-decoration: none;
   display: block;
   color: inherit; /* наследует цвет текста от родительского элемента */
   margin-top: 10px; /* добавим отступ сверху для ссылок */
-}
-.sidenav a:hover {
-  background-color: #333; /* темно-серый цвет при наведении */
 }
 
 /* Стили для основного контента */
