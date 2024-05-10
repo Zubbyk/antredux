@@ -2,29 +2,46 @@
 	text-align: center;
 	color: white;
 }
-
-/* Стили для подписи к видео */
-.caption {
-    margin-top: 10px;
-    font-size: 200;
-}
-
-.caption2 {
-    font-size: 31px;
+body {
+  overflow-x: hidden;
 }
 
 
 
-/* Стили для видео контейнера */
-.video-container {
-    display: inline-block;
-    margin-bottom: 20px;
-    text-align: center;
+.videocont {
+  width: 100%;
+  max-width: 3000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.video-container a {
-    color: #ffffff; /* Цвет ссылки по умолчанию (белый) */
+.videoitm {
+  width: 100%;
+  margin: 0 10px;
+  flex: 1; 
+  top: 40px;
+
 }
+.videoitm2 {
+  width: 100%;
+  margin: 0 10px;
+  flex: 1; 
+  top: 0.1px;
+  position: relative;
+}
+.videoitmtxt2{
+  margin-top: 15px;
+}
+
+
+.buttonn {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 /* кнопка */
 button {
@@ -70,4 +87,9 @@ button:before {
 button:hover::before {
   top: -30px;
   left: -30px;
+}
+
+a {
+ text-decoration: none;
+ color: white;
 }
