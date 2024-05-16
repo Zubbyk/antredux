@@ -65,10 +65,10 @@
 
 /* Стили для кнопки */
 .menu-btn {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 2;
+  z-index: 999;
   width: 30px;
   height: 30px;
   background: url('./../images/1.png') no-repeat center center;

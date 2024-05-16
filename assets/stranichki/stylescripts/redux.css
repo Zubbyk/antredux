@@ -1,18 +1,15 @@
-.main{
-	text-align: center;
-	color: white;
+.tekst{
+  color:#ffffff;
 }
 
-/* Стили для подписи к видео */
+
 .caption {
     margin-top: 10px;
 }
 
 /* Стили для видео контейнера */
 .video-container {
-    display: inline-block;
-    margin-bottom: 20px;
-    text-align: center;
+align-items: ce;
 }
 
 .video-container a {
@@ -66,3 +63,7 @@ button:hover::before {
 
 
 
+a {
+  text-decoration: none;
+  color: white;
+}

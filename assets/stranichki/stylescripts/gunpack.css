@@ -9,32 +9,24 @@ body {
 
 
 .videocont {
-  width: 100%;
-  max-width: 3000px;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
 }
-
 .videoitm {
   width: 100%;
-  margin: 0 10px;
-  flex: 1; 
-  top: 40px;
-
+  align-items: center; 
 }
 .videoitm2 {
   width: 100%;
-  margin: 0 10px;
-  flex: 1; 
-  top: 0.1px;
-  position: relative;
+  align-items: center; 
 }
-.videoitmtxt2{
-  margin-top: 15px;
+.videoitm, .videoitm2 {
+  margin-right: -500px; /* Измените значение на нужное вам */
 }
 
+/* Для последнего элемента внутри .videocont необходимо сбросить margin-right */
+.videoitm:last-child, .videoitm2:last-child {
+  margin-right: 0;
+}
 
 .buttonn {
   position: relative;

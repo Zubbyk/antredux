@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.text{
+    display: inline-block;
+    margin: 40px;
+    font-size: 40px;
+}
+
+.text a:hover {
+    background-color: rgba(83, 83, 83, 0.7); /* используем rgba() для задания прозрачности */
+  }
