@@ -11,4 +11,5 @@ a {
 
 .text a:hover {
     background-color: rgba(83, 83, 83, 0.7); /* используем rgba() для задания прозрачности */
-  }
+
+}
