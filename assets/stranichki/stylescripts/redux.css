@@ -2,14 +2,10 @@
   color:#ffffff;
 }
 
-
-.caption {
-    margin-top: 10px;
-}
-
 /* Стили для видео контейнера */
 .video-container {
-align-items: ce;
+top: 100px;
+align-items: center;
 }
 
 .video-container a {
@@ -66,4 +62,8 @@ button:hover::before {
 a {
   text-decoration: none;
   color: white;
+}
+
+b {
+  background-color: #fff;
 }
