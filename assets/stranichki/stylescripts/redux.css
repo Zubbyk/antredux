@@ -1,3 +1,7 @@
+body {
+  align-items: center;
+}
+
 .tekst{
   color:#ffffff;
 }
@@ -67,3 +71,4 @@ a {
 b {
   background-color: #fff;
 }
+
