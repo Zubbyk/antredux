@@ -107,6 +107,7 @@ body {
 /* Стили для футера */
 footer {
   padding: 20px 0;
+  padding-left: 10px;
   text-align: right;
   position: fixed;
   bottom: 0;
@@ -121,7 +122,7 @@ footer p {
 footer hr {
   border: 0;
   height: 1px;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 /* Остальные стили */
