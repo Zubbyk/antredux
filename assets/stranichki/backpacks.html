@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ANT REDUX's</title>
+	<link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../../assets/style/style.css">
+	<link rel="stylesheet" type="text/css" href="stylescripts/redux.css">
+	<script type="text/javascript" src="stylescripts/123.js"></script>
+</head>
+<body bgcolor = 'black'>
+
+<!-- Кнопка для скрытия/показа навигации -->
+<div class="menu-btn" onclick="toggleNav()"></div>
+
+
+
+<!-- Основной контент -->
+<div class="main" id="mainContent">
+    <h1 id="pageTitle">Рюкзачки</h1>
+    <h2>Установка - закинуть в папку с игрой</h2>
+    
+    <!--видео -->
+    <div class="video-container">
+        <div>
+			    <div class="caption"><h2>пак рюкзаков заменяющих рюкзак 20кг</h2></div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/V9fVvTPXV2k?si=B11yygZj_2wFXTuk" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div><br><a href='https://drive.google.com/file/d/1lo30HeiPcuPu4wcKOMP7Drr5oJC8Bl4e/view'><button>DOWNLOAD</button></a></div>
+        </div>
+    </div>
+</div>
+
+<div class="sensetive">
+  <img src="./../images/bg.jpg">
+</div>
+
+</div>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      fetch('./nav.html')
+          .then(response => response.text())
+          .then(data => {
+              document.body.insertAdjacentHTML('afterbegin', data);
+          })
+          .catch(error => console.error('Error loading navigation:', error));
+  });
+  </script>
+    <script src="assets/scripts/script.js"></script>
+
+</body>
+</html>

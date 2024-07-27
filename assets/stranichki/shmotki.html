@@ -14,40 +14,32 @@
 <!-- Кнопка для скрытия/показа навигации -->
 <div class="menu-btn" onclick="toggleNav()"></div>
 
-<!-- Навигация слева -->
-<div class="sidenav" id="mySidenav"><font size='5'>
-	<h2 style="color: white;">ANT REDUX's</h2> <!-- Добавлен текст "ANT REDUX's" -->
-	<a href="../../index.html">Главная</a>
-	<a href="redux.html">Редуксы</a>
-	<a href="gunpack.html">Ганпаки</a>
-	<a href="roads.html">Дороги</a>
-	<a href="Rastitelnost.html">Растительность</a>
-    <a href="arena.html">Арена</a>
-    <a href="shmotki.html">Заменёнки</a>
-    <a href="mapcords.html">Корды мапы</a>
-    <a href="maps.html">Карты(soon)</a>
-	<a href="sounds.html">Звуки(soon)</a>
-	<a href="#">soon</a>
-	<a href="#">soon</a>
-</div>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		fetch('./nav.html')
+			.then(response => response.text())
+			.then(data => {
+				document.body.insertAdjacentHTML('afterbegin', data);
+			})
+			.catch(error => console.error('Error loading navigation:', error));
+	});
+	</script>
+	  <script src="assets/scripts/script.js"></script>
+  
 <!-- Основной контент -->
 <div class="main" id="mainContent"><font color='white'>
   <h1>Замененки</h1>
   <h2>ниже всё кликабельно</h2>
     <div class="text"><a href='koburi.html'>Кобуры</a></div>
+	<div class="text"><a href='backpacks.html'>Рюкзаки</a></div>
+
 	
 	<div class="sensetive">
 		<img src="./../images/bg.jpg">
 	</div>
 </div>
 
-<footer>
-	<p>
-	  <a href='https://www.youtube.com/@ZubbyGG/featured'><img src='../images/youtube.png' height='70px' width='70px'></a>
-	  <a href='https://discord.gg/wKnJ3t9zyY'><img src='../images/discord.png' height='70px' width='70px'></a>
-	  <a href='https://t.me/miamorkoc'><img src='../images/telegram.png' height='70px' width='70px'></a>
-  </p>
-  </footer>
+
 
 
 </body>
