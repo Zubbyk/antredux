@@ -21,6 +21,7 @@
     margin: 0;
     font-family: 'beer money', Arial, sans-serif; /* Используем ваш шрифт */
     text-align: center; /* Центрируем содержимое по центру */
+    background-color: black;
   }
 
   .sidenav {
@@ -37,6 +38,7 @@
     background-position: 0px 65px; /* Смещение на 15px вниз */
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    font-size: 25px;
   }
   
   
