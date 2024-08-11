@@ -7,7 +7,9 @@
 
 .caption {
     font-size: 30px;
-    padding-top: 1px; /* Отступ между видео и подписью */
+    margin-top: 40px; /* Отступ между видео и подписью */
+    margin-bottom: 0px;
+    line-height: 0.5px;
 }
 
 @font-face {
