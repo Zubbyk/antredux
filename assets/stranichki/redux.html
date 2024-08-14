@@ -1,54 +1,51 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>ANT REDUX's</title>
-<link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
-<link rel="stylesheet" type="text/css" href="../../assets/style/style.css">
-<script type="text/javascript" src="stylescripts/123.js"></script>
-<link rel="stylesheet" type="text/css" href="stylescripts/reduxhtml.css">
-
+	<meta charset="utf-8">
+	<title>ANT REDUX's</title>
+	<link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../../assets/style/style.css">
+	<script type="text/javascript" src="stylescripts/123.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylescripts/reduxhtml.css">
 </head>
 <body>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-		fetch('./nav.html')
-			.then(response => response.text())
-			.then(data => {
-				document.body.insertAdjacentHTML('afterbegin', data);
-			})
-			.catch(error => console.error('Error loading navigation:', error));
-	});
-	</script>
-	  <script src="assets/scripts/script.js"></script>
-  
+document.addEventListener('DOMContentLoaded', function() {
+	fetch('./nav.html')
+		.then(response => response.text())
+		.then(data => {
+			document.body.insertAdjacentHTML('afterbegin', data);
+		})
+		.catch(error => console.error('Error loading navigation:', error));
+});
+</script>
 
+<script src="assets/scripts/script.js"></script>
+  
 <!-- Основной контент -->
 <div class="main" id="mainContent"><font color='white'>
-  <h1>Редуксы</h1>
-  <h2>ниже всё кликабельно</h2>
-    <div class="text"><a href='antredux.html'>ANT REDUX </a></div>
-    <div class="text"><a href='sakutaredux.html'>SAKUTA REDUX</a></div>
-    <div class="text"><a href='steelredux.html'>STEEL REDUX</a></div>
+  	<h1>Редуксы</h1>
+  	<h2>ниже всё кликабельно</h2>
+	<div class="text"><a href='antredux.html'>ANT REDUX </a></div>
+	<div class="text"><a href='sakutaredux.html'>SAKUTA REDUX</a></div>
+	<div class="text"><a href='steelredux.html'>STEEL REDUX</a></div>
 	<div class="text"><a href='hauntedredux.html'>HAUNTED REDUX</a></div>
 	<div class="text"><a href='auraredux.html'>AURA REDUX</a></div>
 	<div class="text"><a href='biduinredux.html'>BIDUIN REDUX</a></div>
 
-<div>
-	<h1>приват реБуксы (слил для вас)</h1>
-	<div class="text"><a href='kiseredux.html'>KISE REDUX</a></div>
+	<div>
+		<h1>приват реБуксы (слил для вас)</h1>
+		<div class="text">
+			<a href='kiseredux.html'>KISE REDUX</a>
+		</div>
+	</div>
+
+	<div class="sensetive">
+		<img src="./../images/bg.jpg">
+	</div>
 
 </div>
-
-<div class="sensetive">
-	<img src="./../images/bg.jpg">
-</div>
-
-</div>
-
-
-
 
 </body>
 </html>

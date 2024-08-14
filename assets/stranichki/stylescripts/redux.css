@@ -134,3 +134,22 @@ b {
 .a{
   z-index: 1;
 }
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text img {
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 100%;
+  width: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.hover-text:hover img {
+  display: block;
+}
