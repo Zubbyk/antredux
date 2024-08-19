@@ -102,8 +102,7 @@ b {
   max-height: 80%;
   animation: zoom 0.3s;
   margin-top: 60px;
-  height: 800px;
-  width: 800px;
+
   border: solid white 3px;
 }
 
