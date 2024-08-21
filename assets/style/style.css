@@ -1,7 +1,7 @@
 .video-container {
     display: inline-block; /* Размещаем видео в строчку */
     text-align: center; /* Центрируем содержимое по горизонтали */
-    margin: 0 5px; /* Отступы между видео */
+    margin: 0 6px; /* Отступы между видео */
     padding-top: 5px;
 }
 
