@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ANT REDUX's</title>
+	<link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../../assets/style/style.css">
+	<link rel="stylesheet" type="text/css" href="stylescripts/redux.css">
+	<script type="text/javascript" src="stylescripts/123.js"></script>
+</head>
+<body>
+
+<!-- Основной контент -->
+<div class="main" id="mainContent">
+    <h1 id="pageTitle">HLS REDUX</h1>
+    
+    <div class="video-container">
+      <div class="caption">
+          <h2>UTOPIA REDUX</h2>
+      </div>
+      <div class="glowing-iframe">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/b6WOut2cZEI?si=s-kdR6PBDVyrHRz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+          <br><a target="_blank" href='https://drive.google.com/drive/folders/1_LA6B5f5-_ibD6Pf67_IQaUPxoXc0uti?hl=ru'><button>REDUX</button></a>
+          <a target="_blank" href='https://drive.google.com/drive/folders/19V4_eoUPiv21zhElgt8BUiG6YxLLyH_Y?usp=drive_link'><button>ROADS</button></a>
+      </div>
+  </div>
+
+    <div class="sensetive">
+      <img src="./../images/bg.jpg">
+  </div>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      fetch('./nav.html')
+          .then(response => response.text())
+          .then(data => {
+              document.body.insertAdjacentHTML('afterbegin', data);
+          })
+          .catch(error => console.error('Error loading navigation:', error));
+  });
+  </script>
+    <script src="assets/scripts/script.js"></script>
+
+</body>
+</html>
