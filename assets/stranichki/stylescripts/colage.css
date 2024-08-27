@@ -1,6 +1,4 @@
-.video-container {
-    position: relative;
-  }
+
   
   .image-container {
     position: relative;
@@ -40,10 +38,6 @@
   .next {
     right: 0;
   }
-
-
-
-
 
   .caption {
     margin-bottom: 20px; /* Отступ снизу */
