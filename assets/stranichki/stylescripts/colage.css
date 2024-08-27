@@ -1,0 +1,65 @@
+.video-container {
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 560px;
+    height: 315px;
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .arrows {
+    opacity: 1;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+
+
+
+
+  .caption {
+    margin-bottom: 20px; /* Отступ снизу */
+  }
+  
+  #additional-text {
+    margin-top: 10px; /* Отступ сверху */
+    white-space: normal; /* Разрешить перенос текста */
+    line-height: 1.6; /* Увеличить межстрочный интервал */
+  }
+  
+  #toggle-text {
+    cursor: pointer;
+    color: white;
+  }
+  
+  #toggle-text:hover {
+    text-decoration: underline;
+  }
