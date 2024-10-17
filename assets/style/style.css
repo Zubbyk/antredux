@@ -39,11 +39,14 @@
     transition: left 0.3s;
     background-image: url("../images/ramka.png");
     background-position: 0px 65px; /* Смещение на 15px вниз */
-    background-size: 100% 100%;
+    background-size: 100% 94.5%;
     background-repeat: no-repeat;
     font-size: 25px;
   }
   
+  .sidenav h2{
+    padding-top: 20px;
+  }
   
   
 .sidenav a:hover {
@@ -52,7 +55,7 @@
 
 
 .sidenav a {
-  padding: 10px 15px;
+  padding: 10px;
   text-decoration: none;
   display: block;
   color: inherit; /* наследует цвет текста от родительского элемента */
@@ -237,6 +240,3 @@ iframe{
   border-radius: 9px; /* Округленные углы (необязательно) */
 }
 
-h1{
-  margin-top: 0px;
-}
