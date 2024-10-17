@@ -129,16 +129,6 @@ footer hr {
   margin: 5px 0;
 }
 
-/* Остальные стили */
-body {
-  margin: 0;
-  font-family: 'beer money', Arial, sans-serif; /* Используем ваш шрифт */
-  text-align: center; /* Центрируем содержимое по центру */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .main {
   flex: 1;
 }
@@ -235,12 +225,9 @@ body {
   padding: 5px; /* Внутренний отступ */
   box-shadow: 0 0 10px 2px white; /* Свечение */
   border-radius: 9px; /* Округлённые углы */
-
   width: fit-content; /* Ограничиваем ширину по содержимому */
   margin: auto; /* Центрируем по горизонтали на странице */
 }
-
-
 
 img{
   border-radius: 9px; /* Округленные углы (необязательно) */
@@ -248,4 +235,8 @@ img{
 
 iframe{
   border-radius: 9px; /* Округленные углы (необязательно) */
+}
+
+h1{
+  margin-top: 0px;
 }

@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: 'beer money', Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
+    
+    /* Изначальное состояние для анимации проявления */
+    opacity: 0;
+    transform: translateY(0px); /* Сдвиг немного вниз */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Плавный переход */
+  }
+  
+  /* Состояние после загрузки */
+  body.visible {
+    opacity: 1;
+    transform: translateY(0); /* Возвращение в исходное положение */
+  }
+  
