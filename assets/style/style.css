@@ -229,11 +229,18 @@ body {
 }
 
 .glowing-iframe {
-  display: inline-block; /* Это поможет ограничить ширину по горизонтали */
-  padding: 5px; /* Отступы внутри рамки */
-  box-shadow: 0 0 10px 2px white; /* Уменьшаем горизонтальное свечение */
-  border-radius: 9px; /* Округленные углы (необязательно) */
+  display: flex; /* Flexbox для центрирования содержимого */
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  padding: 5px; /* Внутренний отступ */
+  box-shadow: 0 0 10px 2px white; /* Свечение */
+  border-radius: 9px; /* Округлённые углы */
+
+  width: fit-content; /* Ограничиваем ширину по содержимому */
+  margin: auto; /* Центрируем по горизонтали на странице */
 }
+
+
 
 img{
   border-radius: 9px; /* Округленные углы (необязательно) */
