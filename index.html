@@ -19,49 +19,6 @@
 
 <script src="assets/stranichki/stylescripts/img.js"></script>
 
-<style>
-
-.menu-btn {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 999;
-  width: 30px;
-  height: 30px;
-  background: url('assets/images/1.png') no-repeat center center;
-  background-size: contain;
-  cursor: pointer;
-  transition: left 0.3s; /* анимация при изменении положения */
-}
-
-.menu-btn::after {
-  content: "Click me";
-  position: absolute;
-  top: 50%;
-  left: 40px; /* облачко справа от кнопки */
-  transform: translateY(-50%);
-  padding: 5px 10px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-size: 20px;
-  color: black;
-  white-space: nowrap;
-}
-
-.menu-btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 30px; /* положение треугольника у облачка справа от кнопки */
-  transform: translateY(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent white transparent transparent;
-}
-
-</style>
-
 <!-- Кнопка для скрытия/показа навигации -->
 <div class="menu-btn" onclick="toggleNav()"></div>
 
