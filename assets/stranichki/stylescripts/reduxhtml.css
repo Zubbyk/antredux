@@ -28,7 +28,6 @@ a {
     border-radius: 12px; /* Более мягкое скругление */
 }
 
-
 .glowing-iframe {
     display: flex; /* Flexbox для центрирования содержимого */
     align-items: center; /* Центрирование по вертикали */
