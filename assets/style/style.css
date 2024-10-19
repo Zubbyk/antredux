@@ -38,28 +38,36 @@
     padding-top: 60px;
     transition: left 0.3s;
     background-image: url("../images/ramka.png");
-    background-position: 0px 65px; /* Смещение на 15px вниз */
+    background-position: 0px 65px;
     background-size: 100% 94.5%;
     background-repeat: no-repeat;
     font-size: 25px;
-  }
-  
-  .sidenav h2{
-    padding-top: 20px;
-  }
-  
-  
-.sidenav a:hover {
-  background-color: rgba(83, 83, 83, 0.7); /* используем rgba() для задания прозрачности */
 }
 
+.sidenav h2 {
+    padding-top: 20px;
+    margin-bottom: 20px; /* Увеличиваем отступ под заголовком */
+}
 
 .sidenav a {
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  color: inherit; /* наследует цвет текста от родительского элемента */
-  margin-top: 10px; /* добавим отступ сверху для ссылок */
+    width: 165px; /* Фиксированная ширина */
+    height: 45px; /* Фиксированная высота для выравнивания */
+    margin: 16px auto; /* Увеличиваем расстояние между ссылками и центрируем */
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    color: inherit;
+    border-radius: 6px;
+    transition: all 0.23s ease-in-out;
+    box-sizing: border-box; /* Учитываем отступы и границы */
+}
+
+.sidenav a:hover {
+    background-color: rgba(83, 83, 83, 0.9);
+    padding: 0;
+    transform: scale(1.1); 
+    border-radius: 8px;
 }
 
 /* Стили для основного контента */

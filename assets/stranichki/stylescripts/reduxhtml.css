@@ -7,16 +7,25 @@ a {
     color: white;
 }
 
-.text{
+.text {
     display: inline-block;
     margin: 40px;
     font-size: 40px;
-    position:relative;
+    position: relative;
+}
+
+.text a {
+    transition: all 0.23s ease-in-out; /* Плавный переход для всех изменений */
+    text-decoration: none; /* Убираем подчёркивание */
+    display: inline-block;
+    border-radius: 8px; /* Небольшое скругление по умолчанию */
 }
 
 .text a:hover {
-    background-color: rgba(83, 83, 83, 0.7); /* используем rgba() для задания прозрачности */
-
+    background-color: rgba(83, 83, 83, 0.9); /* Насыщенный фон при наведении */
+    padding: 3px 5px; /* Лёгкое увеличение отступов */
+    transform: scale(1.1); /* Лёгкое увеличение текста и ссылки */
+    border-radius: 12px; /* Более мягкое скругление */
 }
 
 
