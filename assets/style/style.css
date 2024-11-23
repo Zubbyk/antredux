@@ -128,6 +128,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 60px; /* Установим фиксированную высоту для футера */
+  z-index: -100;
 }
 
 footer p {
@@ -248,3 +249,7 @@ iframe{
   border-radius: 9px; /* Округленные углы (необязательно) */
 }
 
+audio {
+  filter: sepia(100%) saturate(70%) grayscale(10) contrast(99%) invert(120%);
+  top: 50%;
+}
