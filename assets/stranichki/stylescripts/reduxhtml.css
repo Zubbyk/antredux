@@ -38,3 +38,24 @@ a {
     width: fit-content; /* Ограничиваем ширину по содержимому */
     margin: auto; /* Центрируем по горизонтали на странице */
   }
+
+  .sakuta {
+    position: relative;
+    display: inline-block; /* Чтобы плашка была относительна текста */
+  }
+  
+  .new-badge {
+    position: absolute;
+    top: 20px; /* Настройка отступа от верхнего края */
+    right: 10px; /* Настройка отступа от правого края */
+    background-color: red; /* Цвет фона */
+    color: white; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    padding: 2px 6px; /* Внутренние отступы для аккуратного вида */
+    border-radius: 4px; /* Скругленные углы */
+    z-index: 1; /* Чтобы плашка была сверху */
+    transform: rotate(20deg); /* Наклон на 45 градусов вправо */
+    cursor: cell;
+  }
+  
